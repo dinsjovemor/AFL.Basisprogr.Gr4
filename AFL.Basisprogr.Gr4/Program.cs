@@ -10,6 +10,7 @@ namespace AFL.Basisprogr.Gr4
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hej Dennis, nu kan vi kopiere vores projekt ind i denne Solution med dette program");
 
         }
     }
