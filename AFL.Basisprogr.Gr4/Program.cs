@@ -23,6 +23,7 @@ namespace ConsoleApp13___afleverings_projekt
         {
             static void Main(string[] args)
             {
+                Console.WriteLine("Hello guys");
                 int brugerTal = 0;
                 //Viser tekst
                 Console.WriteLine("GÆT ET TAL");
