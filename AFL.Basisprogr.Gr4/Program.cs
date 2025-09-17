@@ -48,7 +48,29 @@ namespace ConsoleApp13___afleverings_projekt
                 //INITIALIZE: Tallet skal være mellem 1 - 100
                 int pcTal = rnd.Next(1, 101);
 
-                //INITIALIZE: I alle tilfælde, får spilleren et gæt mere, (indenfor max antal gæt)
+
+                //INITIALIZE: I alle tilfælde, får spilleren +1 gæt mere, (kun indenfor max antal gæt)
+
+                    //Hvis man vinder:
+                //DISPLAY: Vundet spillet: "Du gættede rigtigt”
+                Console.WriteLine("du har gættet rigtigt");
+
+                //INITIALIZE: Hvis tallet gættes, kan spilleren 1. Spille igen eller 2. Hovedmenu
+
+                //PROMPT: Spilleren kan vælge enten: 1. Spil igen, 2. Hovedmenu eller 3. Luk spillet
+
+                //Hvis man taber:
+                //DISPLAY: “Du har tabt spillet”
+                Console.WriteLine("Spillet er tabt....");
+                //Skriver valgmuligheder
+                Console.WriteLine("Vælg 1,2 eller 3 (1. Spil igen. 2. Hovedmenu. 3. Luk spillet");
+
+                //INITIALIZE: Tabt spillet: Spiller kan vælge 1. Spille igen, 2. Hovedmenu, 3. Luk spillet:
+                //PROMPT: Vælg 1,2 eller 3 (1. Spil igen. 2. Hovedmenu. 3. Luk spillet)
+
+
+                //INITIALIZE: Computer kalkulerer forskellen mellem Tilfældigt tal og Spilleren gæt
+
 
                 //INITIALIZE
                 //Erklærer, i betingelsen While, at så længe brugerTal ikke er pcTal, så;
@@ -72,24 +94,12 @@ namespace ConsoleApp13___afleverings_projekt
 
 
                 }
-                //DISPLAY: Display, "Du gættede rigtigt”
-                Console.WriteLine("du har gættet rigtigt");
+               
 
+                
 
-                //PROMPT: Spilleren kan vælge enten: 1. Spil igen, 2. Hovedmenu eller 3. Luk spillet
-
-
-                //DISPLAY: “Du har tabt spillet”
-
-                //INITIALIZE: Spiller kan vælge 1. Spille igen, 2. Hovedmenu, 3. Luk spillet:
-
-                //PROMPT: Vælg 1,2 eller 3 (1. Spil igen. 2. Hovedmenu. 3. Luk spillet)
-                    
-                //INITIALIZE: Hvis tallet gættes, kan spilleren 1. Spille igen eller 2. Hovedmenu
-                //INITIALIZE: Computer kalkulerer forskellen mellem Tilfældigt tal og Spilleren gæt
-
-
-
+                
+                
 
 
 
