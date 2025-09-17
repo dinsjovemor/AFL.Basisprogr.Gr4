@@ -23,26 +23,7 @@ namespace ConsoleApp13___afleverings_projekt
         {
             static void Main(string[] args)
             {
-                Console.WriteLine("Hello guys");
-                int brugerTal = 0;
-                //Viser tekst
-                Console.WriteLine("GÆT ET TAL");
-                //Beder brugeren indtaste sit navn
-                Console.WriteLine("Venligst indtast dit navn:");
-
-                //Dette er en tom linje
-                Console.WriteLine(" ");
-
-                //Viser brugerens indtastede tekst
-                string navn = Console.ReadLine();
-
-                //Forklarer spillet til brugeren 
-                Console.WriteLine("Hej velkommen " + navn);
-                Console.WriteLine("Gæt et tal mellem 1 og 100.");
-                Console.WriteLine("Du har max 10 antal gæt");
-                //Erklærer brugerens indTastning
-                string indTastning = Console.ReadLine();
-
+                
                 //Computer genererer et tilfældigt tal (fundet på google)
                 Random rnd = new Random();
                 //Computeren genererer et tilfældigt tal ml. 1-100
@@ -67,6 +48,28 @@ namespace ConsoleApp13___afleverings_projekt
 
                 }
                 Console.WriteLine("du har gættet rigtigt");
+
+                Console.WriteLine("Hello guys");
+                int brugerTal = 0;
+                //Viser tekst
+                Console.WriteLine("GÆT ET TAL");
+                //Beder brugeren indtaste sit navn
+                Console.WriteLine("Venligst indtast dit navn:");
+
+                //Dette er en tom linje
+                Console.WriteLine(" ");
+
+                //Viser brugerens indtastede tekst
+                string navn = Console.ReadLine();
+
+                //Forklarer spillet til brugeren 
+                Console.WriteLine("Hej velkommen " + navn);
+                Console.WriteLine("Gæt et tal mellem 1 og 100.");
+                Console.WriteLine("Du har max 10 antal gæt");
+                //Erklærer brugerens indTastning
+                string indTastning = Console.ReadLine();
+
+
 
 
 
