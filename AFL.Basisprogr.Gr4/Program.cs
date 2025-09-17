@@ -23,11 +23,14 @@ namespace ConsoleApp13___afleverings_projekt
         {
             static void Main(string[] args)
             {
-                
+                //Dinas opg. Gæt et tal:
+
                 //Computer genererer et tilfældigt tal (fundet på google)
                 Random rnd = new Random();
-                //Computeren genererer et tilfældigt tal ml. 1-100
+                //Tallet skal være afgrænset ml. 1-100
                 int pcTal = rnd.Next(1, 101);
+
+
                 //Konverterer indTastning til int32
                 brugerTal = Convert.ToInt32(indTastning);
 
