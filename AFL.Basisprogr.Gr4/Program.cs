@@ -44,32 +44,76 @@ class Program
         Console.WriteLine("gæt et tal");
         Console.Write("\n");
 
-        Random random = new Random();
-        int numberToGuess = random.Next(1, 101);
-        int userGuess = 0;
+        
+                //DINAS OPGAVE, GÆT ET TAL:
 
-        while (userGuess != numberToGuess)
-        {
-            Console.Write("Gæt et tal mellem 1 og 100: ");
-            string input = Console.ReadLine();
+                //DISPLAY: ”Velkommen til Gæt et tal”
 
-            userGuess = Convert.ToInt32(input);
+                Console.WriteLine("Hej velkommen til Gæt et tal");
 
-            if (userGuess > numberToGuess)
-            {
-                Console.WriteLine("det er for højt");
-            }
-            else if (userGuess < numberToGuess)
-            {
-                Console.WriteLine("det er for lavt");
-            }
-            
-        }
-        Console.Write("\n");
-        Console.WriteLine("Tillykke, du gættede det rigtige tal!");
-        Console.Write("\n");
-        Console.WriteLine("Press any key to return to the menu...");
-        Console.ReadKey();
+                //DISPLAY: ”Reglerne til spillet”
+                Console.WriteLine("Du kan gætte et tal mellem 1 og 100.");
+                Console.WriteLine("Du indtaster tallet og trykker Enter");
+                Console.WriteLine("Du har max 3 antal gæt");
+                Console.WriteLine("Held og lykke. Tryk Enter for at komme videre");
+
+                //INITIALIZE: Værdien sættes til 0
+                int brugerTal = 0;
+                //PROMPT: Spillerens 1. gæt indtastes
+                string indTastning = Console.ReadLine();
+                //INITIALIZE: Konverterer indTastningen til int32 og erklærer den som "brugerTal"
+                brugerTal = Convert.ToInt32(indTastning);
+
+                //INITIALIZE: Værdi-- (decrease) fra max antal gæt
+                //INITIALIZE: Stop spillet, når 3 gæt er brugt
+
+                //INITIALIZE: Computeren genererer et tilfældigt nummer (funktion er fundet på google)
+                Random rnd = new Random();
+
+                //INITIALIZE: Tallet skal være mellem 1 - 100
+                int pcTal = rnd.Next(1, 101);
+
+
+                //INITIALIZE: I alle tilfælde, får spilleren +1 gæt mere, (kun indenfor max antal gæt)
+
+                    //Hvis man vinder:
+                //DISPLAY: Vundet spillet: "Du gættede rigtigt”
+                Console.WriteLine("du har gættet rigtigt");
+
+                //INITIALIZE: Hvis tallet gættes, kan spilleren 1. Spille igen eller 2. Hovedmenu
+
+                //PROMPT: Spilleren kan vælge enten: 1. Spil igen, 2. Hovedmenu eller 3. Luk spillet
+
+                //Hvis man taber:
+                //DISPLAY: “Du har tabt spillet”
+                Console.WriteLine("Spillet er tabt....");
+                //Skriver valgmuligheder
+                Console.WriteLine("Vælg 1,2 eller 3 (1. Spil igen. 2. Hovedmenu. 3. Luk spillet");
+
+                //INITIALIZE: Tabt spillet: Spiller kan vælge 1. Spille igen, 2. Hovedmenu, 3. Luk spillet:
+                //PROMPT: Vælg 1,2 eller 3 (1. Spil igen. 2. Hovedmenu. 3. Luk spillet)
+
+
+                //INITIALIZE: Computer kalkulerer forskellen mellem Tilfældigt tal og Spilleren gæt
+
+
+                //INITIALIZE
+                //Erklærer, i betingelsen While, at så længe brugerTal ikke er pcTal, så;
+                while (brugerTal != pcTal)
+                {
+                    //INITIALIZE: Betingelse: Hvis nummeret er Under spillerens gæt
+                    //hvis brugerTal er højere end pcTal:
+                    if (brugerTal > pcTal)
+                    {
+                        //DISPLAY: “Tallet du skal gætte, er lavere, prøv igen”
+                        Console.WriteLine("tallet du skal gætte er lavere");
+                    }
+                    //INITIALIZE: Betingelse: Hvis nummeret er Over spillerens gæt,
+                    //hvis brugerTal er lavere end pcTal:
+                    else if (brugerTal < pcTal)
+                    {
+                        //DISPLAY: Display “Tallet du skal gætte, er højere, prøv igen”
+                        Console.WriteLine("tallet du skal gætte er højere");
     }
 
     static void Spil2()
