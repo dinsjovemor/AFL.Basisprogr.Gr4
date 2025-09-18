@@ -10,8 +10,39 @@ namespace AFL.Basisprogr.Gr4
     {
         static void Main(string[] args)
         {
-            
+        
+        bool exit = false;
+
+        while (!exit)
+        {
+            Console.Clear();
+            Console.WriteLine("=== Game Menu ===");
+            Console.WriteLine("1. spil 'gæt et tal'");
+            Console.WriteLine("2. spil 'sten saks papir'");
+            Console.WriteLine("3. Exit");
+            Console.Write("Vælg mulighed 1 2 3");
+            Console.Write("\n");
+            string choice = Console.ReadLine();
+
+            switch (choice)
             {
+                case "1":
+                    Spil1();
+                    break;
+                case "2":
+                    Spil2();
+                    break;
+                case "3":
+                    Console.WriteLine("Lukker spillet ned... ");
+                    exit = true;
+                    break;
+                default:
+                    Console.WriteLine("fejl.");
+                    Console.ReadKey();
+                    break;
+            }
+        }
+    }
                 //DINAS OPGAVE, GÆT ET TAL:
 
                 //DISPLAY: ”Velkommen til Gæt et tal”
@@ -86,20 +117,6 @@ namespace AFL.Basisprogr.Gr4
 
 
                 }
-               
-
-                
-
-                
-                
-
-
-
-
-
-
-
-
             }
         }
     }
