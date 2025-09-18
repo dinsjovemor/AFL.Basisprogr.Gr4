@@ -120,9 +120,5 @@ namespace AFL.Basisprogr.Gr4
             }
         }
     }
-
-
-
-}
-    
+}    
 
