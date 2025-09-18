@@ -57,7 +57,7 @@ class Program
                 Console.WriteLine("Du har max 3 antal gæt");
                 Console.WriteLine("Held og lykke. Tryk Enter for at komme videre");
 
-                //INITIALIZE: Værdien sættes til 0
+                //INITIALIZE: Værdien sættes til 0, så det ikke kan blive et negativt tal
                 int brugerTal = 0;
                 //PROMPT: Spillerens 1. gæt indtastes
                 string indTastning = Console.ReadLine();
