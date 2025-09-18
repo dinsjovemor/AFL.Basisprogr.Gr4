@@ -140,7 +140,7 @@ class Program
             Console.WriteLine("Skriv '1' for sten, '2' for papir og '3' for saks og 'q' for at stoppe");
             string spillerindput = Console.ReadLine();
 
-            int aiIndputs = random.Next(1, 3);
+            int aiIndputs = random.Next(1, 4);
 
             if (spillerindput == "q")
             {
