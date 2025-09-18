@@ -61,7 +61,7 @@ class Program
                 int brugerTal = 0;
                 //PROMPT: Spillerens 1. gæt indtastes
                 string indTastning = Console.ReadLine();
-                //INITIALIZE: Konverterer indTastningen til int32 og erklærer den som "brugerTal"
+                //INITIALIZE: Konverterer indTastningen til int32 og erklærer den som "brugerTal" på samme tid
                 brugerTal = Convert.ToInt32(indTastning);
 
                 //INITIALIZE: Værdi-- (decrease) fra max antal gæt
