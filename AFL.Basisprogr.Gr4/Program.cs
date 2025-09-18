@@ -10,29 +10,21 @@ namespace AFL.Basisprogr.Gr4
     {
         static void Main(string[] args)
         {
-            using System;
-            using System.Collections.Generic;
-            using System.Linq;
-            using System.Security.Cryptography;
-            using System.Text;
-            using System.Threading.Tasks;
-
-namespace ConsoleApp13___afleverings_projekt
-    {
-        internal class Program
-        {
-            static void Main(string[] args)
+            
             {
                 //DINAS OPGAVE, GÆT ET TAL:
 
                 //DISPLAY: ”Velkommen til Gæt et tal”
-                Console.WriteLine("Hej velkommen " + navn);
+
+                Console.WriteLine("Hej velkommen til Gæt et tal");
 
                 //DISPLAY: ”Reglerne til spillet”
-                Console.WriteLine("Gæt et tal mellem 1 og 100.");
+                Console.WriteLine("Du kan gætte et tal mellem 1 og 100.");
+                Console.WriteLine("Du indtaster tallet og trykker Enter");
                 Console.WriteLine("Du har max 3 antal gæt");
+                Console.WriteLine("Held og lykke. Tryk Enter for at komme videre");
 
-                //INITIALIZE: Værdien skal være 0
+                //INITIALIZE: Værdien sættes til 0
                 int brugerTal = 0;
                 //PROMPT: Spillerens 1. gæt indtastes
                 string indTastning = Console.ReadLine();
@@ -115,5 +107,5 @@ namespace ConsoleApp13___afleverings_projekt
 
 
 }
-    }
-}
+    
+
